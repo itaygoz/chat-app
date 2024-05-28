@@ -48,7 +48,7 @@ const App = () => {
   const signOut = () => {
     console.log('signing out');
     setConnection(undefined);
-    socket.disconnect();
+    socket.off();
   };
 
   return (
