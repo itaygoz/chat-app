@@ -21,5 +21,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Version and publish packages
-        run: npx lerna publish --yes
+      - name: Version 
+        run: npx lerna publish --conventional-commits --yes
+        env:
+          HUSKY: 0
+          
