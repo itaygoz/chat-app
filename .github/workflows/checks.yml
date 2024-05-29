@@ -24,7 +24,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Validate build
         run: npx lerna run build
