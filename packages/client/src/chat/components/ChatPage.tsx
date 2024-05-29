@@ -43,13 +43,14 @@ const ChatPage = () => {
           key: `private_${pm.clientId}`,
           id: pm.clientId!,
           name: pm.nickname,
-          notification: notification
-            ? { content: notification.toString(), style: notificationStyle }
-            : undefined
+          notification:
+            notification && privateRoom?.destination !== pm.clientId
+              ? { content: notification.toString(), style: notificationStyle }
+              : undefined
         })
       );
     });
-  }, [privateMessages, pmUsers, setPmUsers, pmNotification]);
+  }, [privateMessages, pmUsers, setPmUsers, pmNotification, privateRoom]);
 
   useEffect(() => {
     if (errors) {
