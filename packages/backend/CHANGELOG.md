@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.2.0 (2024-05-29)
+
+
+### Features
+
+* bump client version ([#11](https://github.com/itaygoz/chat-app/issues/11)) ([a89f123](https://github.com/itaygoz/chat-app/commit/a89f1239d1785025b8bec7c70687959175ca47e1))
+
+
+
+
+
 ## 0.1.2 (2024-05-29)
 
 **Note:** Version bump only for package chat-app-backend
